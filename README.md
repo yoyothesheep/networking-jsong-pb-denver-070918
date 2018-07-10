@@ -19,6 +19,8 @@ The next 4 bytes determine the length of the payload. As we saw in the transacti
 
 The next 4 bytes are the checksum. The checksum algorithm is something of an odd choice as it's the first 4 bytes of the double-sha256 of the payload. I say odd, as normally, networking protocol checksums generally are designed to have error-correcting capability and double-sha256 has none. That said, the hash function is common in the rest of the protocol and is thus used here.
 
+![Networking Messaging Structure](./networking_messaging_structure.png)
+
 ### Try it
 
 #### Check the [cheat sheet](https://drive.google.com/file/d/1XRby_QYBm5LvEv2rDqxJuKn_8ZsV1RHB/view) for the network message structure.
